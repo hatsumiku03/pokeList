@@ -47,7 +47,7 @@ export const PokemonContext = createContext();
 export const PokemonProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // El useEffect se hace puramente para guardar en localStorage el estado del PC con los bichos capturaos
+  // º El useEffect se hace puramente para guardar en localStorage el estado del PC con los bichos capturaos
   useEffect(() => {
     const storedPC = localStorage.getItem("pokemonPC");
     if (storedPC) {

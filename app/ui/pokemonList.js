@@ -3,6 +3,7 @@ import { PokemonContext } from "../context/sharePokemonForCatch";
 import Image from "next/image";
 
 const PokemonList = () => {
+  // | A través del useContext se muestran cosas, ya con el dispatch hacer cosicas
   const { state, dispatch } = useContext(PokemonContext);
   
   return (
